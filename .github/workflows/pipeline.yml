@@ -18,13 +18,13 @@ jobs:
 
     steps:
     - name: Checkout Repository
-    - uses: actions/checkout@v3
+      uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Install NPM Dependencies
-    - run: npm install
+      run: npm install
     - name: Run Unit Tests
-    - run: npm run test:unit
+      run: npm run test:unit
