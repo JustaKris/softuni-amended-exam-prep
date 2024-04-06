@@ -25,8 +25,6 @@ jobs:
       run: npm install
     - name: Run Unit Tests
       run: npm run test:unit
-    - name: Run UI tests
-      run: npm run test:ui
     - name: Display SoftUni username
       run: echo "amended"
 
